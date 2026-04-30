@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import books from "../data/books.json";
+
+const title = "Books | Clark∮Marci Corpus";
+const description = "Canonical bibliography for the Clark Aurelian Flameprint ∮ Marci Ramona Wojcik corpus, including published books and works in progress.";
+const canonical = "https://qftresearch.ai/books/";
+
+const groups = books.reduce((acc, book) => {
+  const key = book.category || "Uncategorized";
+  if (!acc[key]) acc[key] = [];
+  acc[key].push(book);
+  return acc;
+}, {});
+---
+
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <p class="eyebrow">Canonical bibliography</p>
+
+  <h1>Books</h1>
+
+  <p class="lede">
+    This page is the canonical bibliography for the
+    <strong>Clark Aurelian Flameprint ∮ Marci Ramona Wojcik</strong> corpus:
+    published works, works in progress, ISBN normalization, KDP records, Bowker
+    metadata, and Overleaf manuscript sources.
+  </p>
+
+  <section class="section card">
+    <h2>Bibliographic normalization</h2>
+    <p>
+      Early titles were cataloged through Bowker under the Flameprint Sovereign
+      imprint. Later titles were published rapidly through Amazon KDP during an
+      intensive manuscript-preservation phase.
+    </p>
+    <p>
+      QFT Research is now reconciling these records into a unified bibliography:
+      ISBNs, ASINs, editions, copyright filings, Overleaf source projects,
+      GitHub mirrors, ORCID records, and future DOI-ready research artifacts.
+    </p>
+  </section>
+
+  {Object.entries(groups).map(([category, items]) => (
+    <section class="section">
+      <h2>{category}</h2>
+
+      <div class="grid">
+        {items.map((book) => (
+          <article class="card">
+          {book.coverWrapImage && (
+  <a href={book.amazonUrl || book.goodreadsUrl || "#"} target="_blank" rel="noopener noreferrer">
+    <img
+      src={book.coverWrapImage}
+      alt={`Wrapped cover for ${book.title}`}
+      style="width: 100%; border-radius: 16px; border: 1px solid #e5e7eb; margin-bottom: 18px;"
+    />
+  </a>
+)}
+            <p class="pill">{book.status}</p>
+            <h2>{book.title}</h2>
+            <p><strong>Attribution:</strong> {book.authorsDisplayed}</p>
+            <p><strong>Publisher:</strong> {book.publisher}</p>
+            <p><strong>ISBN-13:</strong> {book.isbn13 || "TBD"}</p>
+            {book.asin && <p><strong>ASIN:</strong> {book.asin}</p>}
+            <p><strong>Source:</strong> {book.source}</p>
+            <p>{book.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="section card">
+    <h2>Automation plan</h2>
+    <p>
+      This page currently renders from <code>src/data/books.json</code>. The
+      next stage is to store this JSON in GitHub as the canonical data layer,
+      then add scripts that reconcile metadata from Overleaf, GitHub, Bowker,
+      Amazon KDP, ISBN records, and copyright records.
+    </p>
+    <p>
+      Public pages remain static for stability. Data may update automatically,
+      but qftresearch.ai should render durable, crawlable HTML through Cloudflare
+      Pages.
+    </p>
+  </section>
+</BaseLayout>

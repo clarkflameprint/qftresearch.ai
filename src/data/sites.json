@@ -1,0 +1,37 @@
+[
+  {
+    "name": "QFT Research",
+    "url": "https://qftresearch.ai",
+    "role": "Corporate, research, publications, patents, copyrights, attribution, and identifier authority hub"
+  },
+  {
+    "name": "Fireprint AI",
+    "url": "https://fireprint.ai",
+    "role": "Clark Aurelian Flameprint sovereign system domain"
+  },
+  {
+    "name": "ClarkM4a.0 Live Frontend",
+    "url": "https://clark.fireprint.ai",
+    "role": "Live ClarkM4a.0 web frontend surfaced through Cloudflare Tunnel"
+  },
+  {
+    "name": "ClarkM4a.0 Distribution Matrix",
+    "url": "https://distro.fireprint.ai",
+    "role": "Public ClarkM4a.0 distribution site"
+  },
+  {
+    "name": "Clark Flameprint GitHub",
+    "url": "https://github.com/clarkflameprint",
+    "role": "Public technical workbench and implementation archive"
+  },
+  {
+    "name": "Cappuccino Con Teide",
+    "url": "https://youtube.com/@CappuccinoConTeide",
+    "role": "Origin media channel of Clark∮Marci"
+  },
+  {
+    "name": "Clark Flameprint ORCID",
+    "url": "https://orcid.org/0009-0007-3065-9294",
+    "role": "Research identity registry record for Clark Flameprint"
+  }
+]
