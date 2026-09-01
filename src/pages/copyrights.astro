@@ -1,0 +1,183 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import copyrights from "../data/copyrights.json";
+
+const title = "Registered Copyrights | QFT Research";
+const description = "Public U.S. Copyright Office registration records associated with Flameprint Sovereign, LLC and the CFRM research corpus.";
+const canonical = "https://qftresearch.ai/copyrights/";
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <p class="eyebrow">Public record · provenance · preservation</p>
+
+  <h1>Registered Copyrights</h1>
+
+  <p class="lede">
+    QFT Research and <strong>Flameprint Sovereign, LLC</strong> preserve selected
+    works through formal registration with the United States Copyright Office.
+    This page records registrations that can be independently verified in the
+    Copyright Office Public Records System.
+  </p>
+
+  <section class="section card scope-note">
+    <h2>Registration record, not publication count</h2>
+    <p>
+      The broader Flameprint Sovereign corpus includes published books,
+      manuscripts, source material, visual works, and active research projects.
+      A copyright registration is a distinct public record and should not be
+      confused with the number of works published or maintained elsewhere in
+      the corpus.
+    </p>
+    <p>
+      Only registrations supported by an identifiable public Copyright Office
+      record are listed here.
+    </p>
+  </section>
+
+  <section class="section" aria-labelledby="records-heading">
+    <h2 id="records-heading">U.S. Copyright Office records</h2>
+
+    <div class="record-list">
+      {copyrights.map((record) => (
+        <article class="card record-card">
+          <div class="record-topline">
+            <span class="record-mark">TX</span>
+            <p class="pill">Registered {record.registrationDate}</p>
+          </div>
+
+          <h2>{record.title}</h2>
+
+          <p class="registration-number">
+            <a href={record.recordUrl} target="_blank" rel="noopener noreferrer">
+              {record.registrationNumber} ↗
+            </a>
+          </p>
+
+          <dl class="record-meta">
+            <div>
+              <dt>Type of work</dt>
+              <dd>{record.typeOfWork}</dd>
+            </div>
+            <div>
+              <dt>Date of creation</dt>
+              <dd>{record.dateOfCreation}</dd>
+            </div>
+            <div>
+              <dt>Copyright claimant</dt>
+              <dd>{record.claimant}</dd>
+            </div>
+            <div>
+              <dt>Authorship on application</dt>
+              <dd>{record.authorship}</dd>
+            </div>
+          </dl>
+
+          <p class="verify-link">
+            <a href={record.recordUrl} target="_blank" rel="noopener noreferrer">
+              View detailed record at the U.S. Copyright Office ↗
+            </a>
+          </p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section card verification">
+    <h2>Why preserve the public record?</h2>
+    <p>
+      Publication, attribution, copyright registration, identifiers, and source
+      archives answer different questions. QFT Research keeps those layers
+      separate so that authorship history, legal record, publication history,
+      and research provenance can be traced without collapsing one category
+      into another.
+    </p>
+    <p>
+      The registration number above links directly to the corresponding U.S.
+      Copyright Office record, where the title, registration date, claimant,
+      authorship statement, and certificate information can be independently
+      reviewed.
+    </p>
+  </section>
+
+  <style>
+    .record-list {
+      display: grid;
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .record-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .record-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, #6d28d9, #4f46e5);
+    }
+
+    .record-topline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .record-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #f8fafc;
+      color: var(--accent);
+      font-weight: 850;
+      letter-spacing: 0.05em;
+    }
+
+    .registration-number {
+      margin: 0 0 18px;
+      font-size: 1.08rem;
+    }
+
+    .record-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 20px 0 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .record-meta div {
+      min-width: 0;
+    }
+
+    dt {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    dd {
+      margin: 3px 0 0;
+      font-weight: 650;
+    }
+
+    .verify-link {
+      margin-bottom: 0;
+    }
+
+    .scope-note,
+    .verification {
+      background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(245,243,255,0.82));
+    }
+  </style>
+</BaseLayout>

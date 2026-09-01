@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Blockchain Digital Rights Management Streaming Library",
+    "patentNumber": "US 11,645,369 B2",
+    "patentId": "US11645369B2",
+    "granted": "May 9, 2023",
+    "priority": "January 15, 2020",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US11645369B2/en",
+    "summary": "Blockchain-mediated digital rights management using tokenized access, ownership information, and fragile watermarking for protected digital artifacts.",
+    "themes": ["Blockchain", "Digital Rights Management", "Security"]
+  },
+  {
+    "title": "Automated Evaluation and Reporting of Microservice Regulatory Compliance",
+    "patentNumber": "US 10,713,664 B1",
+    "patentId": "US10713664B1",
+    "granted": "July 14, 2020",
+    "priority": "March 22, 2019",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US10713664B1/en",
+    "summary": "Automated interpretation, evaluation, and reporting of regulatory requirements for microservice development and operation.",
+    "themes": ["Microservices", "Regulatory Automation", "Ontology"]
+  },
+  {
+    "title": "Blockchain Universal RFID Translator",
+    "patentNumber": "US 11,074,353 B2",
+    "patentId": "US11074353B2",
+    "granted": "July 27, 2021",
+    "priority": "June 20, 2018",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US11074353B2/en",
+    "summary": "Secure translation and transformation of RFID information through blockchain-enabled processing across heterogeneous identification environments.",
+    "themes": ["Blockchain", "RFID", "Interoperability"]
+  },
+  {
+    "title": "Token Repository and Integration",
+    "patentNumber": "US 11,165,585 B2",
+    "patentId": "US11165585B2",
+    "granted": "November 2, 2021",
+    "priority": "June 11, 2019",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US11165585B2/en",
+    "summary": "Distributed token management and transaction serialization for coordinating application access and shared-resource interactions.",
+    "themes": ["Distributed Systems", "Token Management", "Serialization"]
+  },
+  {
+    "title": "Portable Lane Departure Detection",
+    "patentNumber": "US 11,650,072 B2",
+    "patentId": "US11650072B2",
+    "granted": "May 16, 2023",
+    "priority": "November 26, 2019",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US11650072B2/en",
+    "summary": "Portable sensing and risk evaluation for vehicle maneuver and lane-departure conditions using position and location information.",
+    "themes": ["Intelligent Sensing", "Risk Modeling", "Mobility"]
+  },
+  {
+    "title": "Facilitating Blockchain Transactions with an Internet of Things (IoT) Device",
+    "patentNumber": "US 11,847,171 B2",
+    "patentId": "US11847171B2",
+    "granted": "December 19, 2023",
+    "priority": "August 20, 2019",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US11847171B2/en",
+    "summary": "Architecture for facilitating secure transactions between an IoT system and a blockchain peer without requiring a smartphone intermediary.",
+    "themes": ["IoT", "Blockchain", "Distributed Transactions"]
+  },
+  {
+    "title": "Differentiated Workload Telemetry",
+    "patentNumber": "US 11,782,764 B2",
+    "patentId": "US11782764B2",
+    "granted": "October 10, 2023",
+    "priority": "July 7, 2021",
+    "assignee": "International Business Machines Corporation",
+    "url": "https://patents.google.com/patent/US11782764B2/en",
+    "summary": "Correlation and generation of differentiated telemetry across interconnected services, workloads, and event-emitting resources.",
+    "themes": ["Telemetry", "Distributed Systems", "Observability"]
+  }
+]

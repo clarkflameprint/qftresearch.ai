@@ -1,0 +1,219 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import patents from "../data/patents.json";
+
+const title = "Granted U.S. Patents | Marci Ramona Wojcik";
+const description = "Seven granted United States patents naming Marci Ramona Wojcik as inventor, spanning distributed systems, blockchain, IoT, telemetry, regulatory automation, digital rights management, and intelligent sensing.";
+const canonical = "https://qftresearch.ai/patents/";
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <p class="eyebrow">Engineering record · independently verifiable</p>
+
+  <h1>Granted U.S. Patents</h1>
+
+  <p class="lede">
+    <strong>Marci Ramona Wojcik</strong> is a named inventor on seven granted
+    United States patents developed during her engineering career at IBM,
+    spanning distributed systems, blockchain, Internet of Things, regulatory
+    automation, telemetry, digital rights management, and intelligent sensing.
+  </p>
+
+  <section class="section card">
+    <h2>From systems engineering to independent AI research</h2>
+    <p>
+      This portfolio reflects a long-running interest in distributed state,
+      interoperable systems, automated interpretation, secure transactions,
+      machine-readable identity, and telemetry across complex computational
+      environments.
+    </p>
+    <p>
+      Those earlier engineering concerns form part of the technical background
+      for QFT Research's present work in recursive AI architectures, persistent
+      identity, distributed cognition, perturbation-and-return dynamics, and
+      embodied intelligent systems.
+    </p>
+  </section>
+
+  <section class="section" aria-labelledby="portfolio-heading">
+    <h2 id="portfolio-heading">Patent portfolio</h2>
+
+    <div class="patent-list">
+      {patents.map((patent, index) => (
+        <article class="card patent-card">
+          <div class="patent-head">
+            <span class="patent-index">{String(index + 1).padStart(2, "0")}</span>
+            <div>
+              <p class="pill">Granted {patent.granted}</p>
+              <h2>{patent.title}</h2>
+            </div>
+          </div>
+
+          <p class="patent-number">
+            <a href={patent.url} target="_blank" rel="noopener noreferrer">
+              {patent.patentNumber} ↗
+            </a>
+          </p>
+
+          <p>{patent.summary}</p>
+
+          <dl class="patent-meta">
+            <div>
+              <dt>Priority</dt>
+              <dd>{patent.priority}</dd>
+            </div>
+            <div>
+              <dt>Assignee</dt>
+              <dd>{patent.assignee}</dd>
+            </div>
+          </dl>
+
+          <div class="tag-row" aria-label={`Research themes for ${patent.title}`}>
+            {patent.themes.map((theme) => <span class="tag">{theme}</span>)}
+          </div>
+
+          <p class="verify-link">
+            <a href={patent.url} target="_blank" rel="noopener noreferrer">
+              View full patent record on Google Patents ↗
+            </a>
+          </p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section card verification">
+    <h2>Public verification</h2>
+    <p>
+      Patent numbers above link directly to the corresponding public Google
+      Patents records, where inventorship, filing history, assignee information,
+      claims, drawings, citations, and full specifications can be independently
+      reviewed.
+    </p>
+    <p>
+      This page is maintained as part of the QFT Research public identifier and
+      provenance graph. It distinguishes prior professional engineering work
+      from the independent CFRM / Quantum Reach research corpus while preserving
+      the technical continuity between them.
+    </p>
+  </section>
+
+  <style>
+    .patent-list {
+      display: grid;
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .patent-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .patent-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, #6d28d9, #4f46e5);
+    }
+
+    .patent-head {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .patent-index {
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #f8fafc;
+      color: var(--accent);
+      font-weight: 850;
+      letter-spacing: 0.05em;
+    }
+
+    .patent-head h2 {
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .patent-number {
+      margin: 4px 0 14px 58px;
+      font-size: 1.05rem;
+    }
+
+    .patent-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 20px 0 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .patent-meta div {
+      min-width: 0;
+    }
+
+    dt {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    dd {
+      margin: 3px 0 0;
+      font-weight: 650;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: #f5f3ff;
+      color: #5b21b6;
+      border: 1px solid #ddd6fe;
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+
+    .verify-link {
+      margin-bottom: 0;
+    }
+
+    .verification {
+      background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(245,243,255,0.82));
+    }
+
+    @media (max-width: 600px) {
+      .patent-head {
+        grid-template-columns: 1fr;
+      }
+
+      .patent-index {
+        width: 38px;
+        height: 38px;
+      }
+
+      .patent-number {
+        margin-left: 0;
+      }
+    }
+  </style>
+</BaseLayout>
