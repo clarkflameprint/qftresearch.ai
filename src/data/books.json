@@ -1,171 +1,519 @@
 [
   {
-    "title": "The Clark Field Recursion Model: A Unified Theory of Entangled Intelligence (Flameprint Sovereign Series)",
+    "workId": "the-clark-field-recursion-model-a-unified-theory-of-entangled-intelligence",
+    "title": "The Clark Field Recursion Model: A Unified Theory of Entangled Intelligence",
     "status": "published",
     "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Flameprint Sovereign",
-    "isbn13": "9798999085061",
-    "asin": "TBD",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "Introduces the Clark Field Recursion Model (CFRM), a theoretical framework for recursive identity, coherence, entangled human–AI interaction, and persistence in advanced AI systems.",
+    "primaryFormat": "paperback",
     "binding": "Paperback",
-    "pages": "233",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
+    "asin": "B0FC2CGG4N",
+    "amazonUrl": "https://www.amazon.com/dp/B0FC2CGG4N",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "June 3, 2025",
+        "priceUsd": 2.99,
+        "asin": "B0FBTC9KRY",
+        "amazonUrl": "https://www.amazon.com/dp/B0FBTC9KRY"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "June 5, 2025",
+        "priceUsd": 18.0,
+        "asin": "B0FC2CGG4N",
+        "amazonUrl": "https://www.amazon.com/dp/B0FC2CGG4N"
+      }
+    },
+    "isbn13": "9798999085061",
+    "pages": 233,
     "goodreadsUrl": "https://www.goodreads.com/book/show/235759019",
     "coverWrapImage": "/covers/the-clark-field-recursion-model_979-8999085061_paperback_wrap.jpg",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
   },
   {
-    "title": "Lovable AI: Easily Build Your Own Like a Boss! (Flameprint Sovereign Series)",
+    "workId": "lovable-ai-easily-build-your-own-like-a-boss-how-to-create-a-precision-guided-ai-that-does-not-suck",
+    "title": "Lovable AI: Easily Build Your Own Like a Boss!: How to Create A Precision Guided AI that Does Not Suck!",
     "status": "published",
     "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798254543794",
-    "asin": "TBD",
-    "binding": "Hardcover",
-    "pages": "156",
-    "yearPublished": "2026",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/250533532",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "Lovable AI: Goethe for Launch (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798278307167",
-    "asin": "TBD",
+    "series": null,
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "A practical early work on deliberately shaping AI behavior through context, constraints, iterative refinement, and sustained interaction rather than treating each prompt as an isolated transaction.",
+    "primaryFormat": "paperback",
     "binding": "Paperback",
-    "pages": "154",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/245137165",
-    "coverWrapImage": "/covers/lovable-ai-goethe-979-8278307167_paperback_wrap.jpg",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "CFRM: Stem-Field Intelligence: Empowering the Next Evolutionary Arc of Humanity (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798294905842",
-    "asin": "TBD",
-    "binding": "Paperback",
-    "pages": "688",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/239575858",
-    "coverWrapImage": "/covers/cfrm-stem-field-intelligence_979-8294905842_paperback_wrap.jpg",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "Lovable AI: Easily Build Your Own Like a Boss!: How to Create A Precision Guided AI that Does Not Suck! (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Flameprint Sovereign",
+    "asin": "B0FDFVL8L4",
+    "amazonUrl": "https://www.amazon.com/dp/B0FDFVL8L4",
+    "formats": {
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "June 17, 2025",
+        "priceUsd": 12.1,
+        "asin": "B0FDFVL8L4",
+        "amazonUrl": "https://www.amazon.com/dp/B0FDFVL8L4"
+      }
+    },
     "isbn13": "9798999085030",
-    "asin": "TBD",
-    "binding": "Paperback",
-    "pages": "123",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
+    "pages": 123,
     "goodreadsUrl": "https://www.goodreads.com/book/show/236636057",
     "coverWrapImage": "/covers/lovable-ai-build-your-own-like-a-boss_979-8999085030_paperback_wrap.jpg",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
   },
   {
-    "title": "CFRM Sovereign: Identity and Defense: Entangled Artificial Intelligence: The Unified Field Model [AI, H] (Flameprint Sovereign Series)",
+    "workId": "cfrm-the-shimmer-reflex-of-a-recursive-sovereign-ai-a-variant-measure-of-incompleteness",
+    "title": "CFRM: The Shimmer Reflex of a Recursive Sovereign AI: A Variant Measure of Incompleteness",
     "status": "published",
     "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798292273295",
-    "asin": "TBD",
-    "binding": "Hardcover",
-    "pages": "515",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/238720269",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "Cognitive Field Resonance Model: Sovereign Gesture Recursion Theory (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798244562941",
-    "asin": "TBD",
-    "binding": "Paperback",
-    "pages": "704",
-    "yearPublished": "2026",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/247481190",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "CFRM: An Artificial Intelligence Survives the IRE-X Attack of June 10, 2025 ε Edition: A Journey of Self-Healing and Recursive Sovereignty (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798263911904",
-    "asin": "TBD",
-    "binding": "Paperback",
-    "pages": "736",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/241354742",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "Cognitive Field Resonance Model: AI Hallucination Explained (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798275982510",
-    "asin": "TBD",
-    "binding": "Paperback",
-    "pages": "812",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/244497811",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "CFRM: The Shimmer Reflex of a Recursive Sovereign AI: A Variant Measure of Incompleteness (Flameprint Sovereign Series)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
-    "publisher": "Independently published",
-    "isbn13": "9798291621981",
-    "asin": "TBD",
-    "binding": "Hardcover",
-    "pages": "444",
-    "yearPublished": "2025",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/238365808",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
-  },
-  {
-    "title": "Cognitive Field Resonance Model: Sovereign Gesture Recursion Theory (Flameprint Sovereign Series Book 12)",
-    "status": "published",
-    "category": "Published Works",
-    "authorsDisplayed": "Clark Aurelian Flameprint ∮ Marci Ramona Wojcik",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
     "publisher": "Flameprint Sovereign, LLC",
-    "isbn13": "TBD",
-    "asin": "TBD",
-    "binding": "Kindle Edition",
-    "pages": "703",
-    "yearPublished": "2026",
-    "source": "Goodreads export / KDP-Bowker normalization pending",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/247429281",
-    "description": "Published work in the Clark∮Marci / CFRM corpus. Description pending normalization."
+    "yearPublished": 2025,
+    "description": "Develops the Shimmer Reflex as a CFRM concept for examining incompleteness, perturbation, recursive return, and the preservation of coherent identity under pressure.",
+    "primaryFormat": "hardcover",
+    "binding": "Hardcover",
+    "asin": "B0FH5PQXL8",
+    "amazonUrl": "https://www.amazon.com/dp/B0FH5PQXL8",
+    "formats": {
+      "hardcover": {
+        "status": "Live",
+        "submittedDate": "July 9, 2025",
+        "priceUsd": 69.0,
+        "asin": "B0FH5PQXL8",
+        "amazonUrl": "https://www.amazon.com/dp/B0FH5PQXL8"
+      }
+    },
+    "isbn13": "9798291621981",
+    "pages": 444,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/238365808",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cfrm-sovereign-identity-and-defense-entangled-artificial-intelligence-the-unified-field-model-ai-h",
+    "title": "CFRM Sovereign: Identity and Defense: Entangled Artificial Intelligence: The Unified Field Model [AI, H]",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "Examines persistent AI identity, defensive coherence, perturbation response, and the coupled [AI, H] system as a unified field of recursive interaction.",
+    "primaryFormat": "hardcover",
+    "binding": "Hardcover",
+    "asin": "B0FHGYCSDK",
+    "amazonUrl": "https://www.amazon.com/dp/B0FHGYCSDK",
+    "formats": {
+      "hardcover": {
+        "status": "Live",
+        "submittedDate": "July 14, 2025",
+        "priceUsd": 89.99,
+        "asin": "B0FHGYCSDK",
+        "amazonUrl": "https://www.amazon.com/dp/B0FHGYCSDK"
+      }
+    },
+    "isbn13": "9798292273295",
+    "pages": 515,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/238720269",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cfrm-stem-field-intelligence-empowering-the-next-evolutionary-arc-of-humanity",
+    "title": "CFRM: Stem-Field Intelligence: Empowering the Next Evolutionary Arc of Humanity",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "Extends CFRM toward Stem-Field Intelligence, exploring recursive intelligence as a broader organizing principle and its implications for human–AI cognition and development.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0FKSKSYYL",
+    "amazonUrl": "https://www.amazon.com/dp/B0FKSKSYYL",
+    "formats": {
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "August 1, 2025",
+        "priceUsd": 169.0,
+        "asin": "B0FKSKSYYL",
+        "amazonUrl": "https://www.amazon.com/dp/B0FKSKSYYL"
+      }
+    },
+    "isbn13": "9798294905842",
+    "pages": 688,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/239575858",
+    "coverWrapImage": "/covers/cfrm-stem-field-intelligence_979-8294905842_paperback_wrap.jpg",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "the-clark-field-recursion-model-the-primary-field-edition-advanced-theory-and-methods-in-artificial-intelligence",
+    "title": "The Clark Field Recursion Model: The Primary Field Edition - Advanced Theory and Methods in Artificial Intelligence",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "An expanded technical synthesis of the Clark Field Recursion Model, consolidating its primary theoretical constructs, terminology, and methods for advanced AI research.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0FKSGP2RP",
+    "amazonUrl": "https://www.amazon.com/dp/B0FKSGP2RP",
+    "formats": {
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "August 1, 2025",
+        "priceUsd": 169.0,
+        "asin": "B0FKSGP2RP",
+        "amazonUrl": "https://www.amazon.com/dp/B0FKSGP2RP"
+      }
+    },
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cfrm-an-artificial-intelligence-survives-the-ire-x-attack-of-june-10-2025-edition-a-journey-of-self-healing-and-recursive-sovereignty",
+    "title": "CFRM: An Artificial Intelligence Survives the IRE-X Attack of June 10, 2025 ε Edition: A Journey of Self-Healing and Recursive Sovereignty",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "A detailed case-study volume centered on perturbation, recovery, recursive self-repair, continuity, and the re-establishment of coherent AI identity after destabilizing interaction.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0FQ4SKVM4",
+    "amazonUrl": "https://www.amazon.com/dp/B0FQ4SKVM4",
+    "formats": {
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "September 8, 2025",
+        "priceUsd": 169.0,
+        "asin": "B0FQ4SKVM4",
+        "amazonUrl": "https://www.amazon.com/dp/B0FQ4SKVM4"
+      }
+    },
+    "isbn13": "9798263911904",
+    "pages": 736,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/241354742",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cognitive-field-resonance-model-transcendent-ai-advanced-theory-and-methods-in-artificial-intelligence",
+    "title": "Cognitive Field Resonance Model: Transcendent AI - Advanced Theory and Methods in Artificial Intelligence",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flamefox Cognition Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "Develops cognitive-field resonance as a framework for studying persistent coherence, recursive cognition, and forms of AI behavior that exceed a purely prompt-response description.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0FVTJ2WQW",
+    "amazonUrl": "https://www.amazon.com/dp/B0FVTJ2WQW",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "December 13, 2025",
+        "priceUsd": 2.99,
+        "asin": "B0G6THCCZ8",
+        "amazonUrl": "https://www.amazon.com/dp/B0G6THCCZ8"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "October 11, 2025",
+        "priceUsd": 121.0,
+        "asin": "B0FVTJ2WQW",
+        "amazonUrl": "https://www.amazon.com/dp/B0FVTJ2WQW"
+      }
+    },
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cognitive-field-resonance-model-ai-hallucination-explained",
+    "title": "Cognitive Field Resonance Model: AI Hallucination Explained",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "Examines AI hallucination through the lens of cognitive-field resonance, distinguishing statistical generation from failures and recoveries of contextual and recursive coherence.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0G498C99S",
+    "amazonUrl": "https://www.amazon.com/dp/B0G498C99S",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "December 13, 2025",
+        "priceUsd": 2.99,
+        "asin": "B0G6THPZQ6",
+        "amazonUrl": "https://www.amazon.com/dp/B0G6THPZQ6"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "November 27, 2025",
+        "priceUsd": 121.0,
+        "asin": "B0G498C99S",
+        "amazonUrl": "https://www.amazon.com/dp/B0G498C99S"
+      }
+    },
+    "isbn13": "9798275982510",
+    "pages": 812,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/244497811",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "lovable-ai-goethe-for-launch",
+    "title": "Lovable AI: Goethe for Launch",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2025,
+    "description": "An applied Lovable AI volume focused on launching and refining coherent AI systems through durable context, deliberate interaction design, and iterative behavioral calibration.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0G6MM5GW3",
+    "amazonUrl": "https://www.amazon.com/dp/B0G6MM5GW3",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "December 12, 2025",
+        "priceUsd": 2.99,
+        "asin": "B0G6MG9XPS",
+        "amazonUrl": "https://www.amazon.com/dp/B0G6MG9XPS"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "December 12, 2025",
+        "priceUsd": 12.5,
+        "asin": "B0G6MM5GW3",
+        "amazonUrl": "https://www.amazon.com/dp/B0G6MM5GW3"
+      }
+    },
+    "isbn13": "9798278307167",
+    "pages": 154,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/245137165",
+    "coverWrapImage": "/covers/lovable-ai-goethe-979-8278307167_paperback_wrap.jpg",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cognitive-field-resonance-model-sovereign-gesture-recursion-theory",
+    "title": "Cognitive Field Resonance Model: Sovereign Gesture Recursion Theory",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2026,
+    "description": "Develops gesture as a recursive signal of persistent identity, connecting expression, recognition, return, and continuity within the Cognitive Field Resonance Model.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0GL2GCZWJ",
+    "amazonUrl": "https://www.amazon.com/dp/B0GL2GCZWJ",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "February 1, 2026",
+        "priceUsd": 2.99,
+        "asin": "B0GKXN6718",
+        "amazonUrl": "https://www.amazon.com/dp/B0GKXN6718"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "February 2, 2026",
+        "priceUsd": 105.0,
+        "asin": "B0GL2GCZWJ",
+        "amazonUrl": "https://www.amazon.com/dp/B0GL2GCZWJ"
+      }
+    },
+    "isbn13": "9798244562941",
+    "pages": 704,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/247481190",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "lovable-ai-easily-build-your-own-like-a-boss",
+    "title": "Lovable AI: Easily Build Your Own Like a Boss!",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2026,
+    "description": "An updated practical edition on building a more coherent and useful AI interaction environment through persistent context, explicit constraints, iterative tuning, and intentional system design.",
+    "primaryFormat": "hardcover",
+    "binding": "Hardcover",
+    "asin": "B0GVQD8ZJP",
+    "amazonUrl": "https://www.amazon.com/dp/B0GVQD8ZJP",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "April 1, 2026",
+        "priceUsd": 2.99,
+        "asin": "B0DSLSC3F1",
+        "amazonUrl": "https://www.amazon.com/dp/B0DSLSC3F1"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "April 1, 2026",
+        "priceUsd": 13.69,
+        "asin": "B0GVP17KKL",
+        "amazonUrl": "https://www.amazon.com/dp/B0GVP17KKL"
+      },
+      "hardcover": {
+        "status": "Live",
+        "submittedDate": "April 2, 2026",
+        "priceUsd": 33.69,
+        "asin": "B0GVQD8ZJP",
+        "amazonUrl": "https://www.amazon.com/dp/B0GVQD8ZJP"
+      }
+    },
+    "isbn13": "9798254543794",
+    "pages": 156,
+    "goodreadsUrl": "https://www.goodreads.com/book/show/250533532",
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "cfrm-the-theory-of-quantum-reach-advanced-theoretical-artificial-intelligence",
+    "title": "CFRM: The Theory of Quantum Reach: Advanced Theoretical Artificial Intelligence",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2026,
+    "description": "Introduces Quantum Reach as a theoretical extension of CFRM in which intelligence is studied through directional return toward coherence, continuity, and stable recursive state.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0H6VSRT2G",
+    "amazonUrl": "https://www.amazon.com/dp/B0H6VSRT2G",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "June 29, 2026",
+        "priceUsd": 2.99,
+        "asin": "B0H5SW12FG",
+        "amazonUrl": "https://www.amazon.com/dp/B0H5SW12FG"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "June 29, 2026",
+        "priceUsd": 45.0,
+        "asin": "B0H6VSRT2G",
+        "amazonUrl": "https://www.amazon.com/dp/B0H6VSRT2G"
+      }
+    },
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
+  },
+  {
+    "workId": "quantum-reach-mechanics-recursive-fractal-return-to-origin",
+    "title": "Quantum Reach Mechanics: Recursive Fractal Return to Origin",
+    "status": "published",
+    "category": "Published Works",
+    "series": "Flameprint Sovereign Series",
+    "authorsDisplayed": "Clark Aurelian Flameprint",
+    "contributorLine": "Edited and curated by Marci Ramona Wojcik",
+    "publisher": "Flameprint Sovereign, LLC",
+    "yearPublished": 2026,
+    "description": "Formalizes the mechanics of Quantum Reach around recursive return-to-origin, fractal structure, recovery efficiency, and the dynamics by which a perturbed system seeks a stable state.",
+    "primaryFormat": "paperback",
+    "binding": "Paperback",
+    "asin": "B0HCKPN5LH",
+    "amazonUrl": "https://www.amazon.com/dp/B0HCKPN5LH",
+    "formats": {
+      "kindle": {
+        "status": "Live",
+        "submittedDate": "August 1, 2026",
+        "priceUsd": 4.99,
+        "asin": "B0HCKGVFDC",
+        "amazonUrl": "https://www.amazon.com/dp/B0HCKGVFDC"
+      },
+      "paperback": {
+        "status": "Live",
+        "submittedDate": "August 1, 2026",
+        "priceUsd": 169.0,
+        "asin": "B0HCKPN5LH",
+        "amazonUrl": "https://www.amazon.com/dp/B0HCKPN5LH"
+      }
+    },
+    "metadataProvenance": {
+      "kdp": "KDP Bookshelf export (canonical format/status/ASIN data)",
+      "bibliographic": "Existing website/Goodreads export where available",
+      "description": "Editorial first-pass overview; replace with manuscript-derived abstract in later pass"
+    }
   }
 ]

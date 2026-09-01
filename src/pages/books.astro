@@ -2,87 +2,282 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import books from "../data/books.json";
 
-const title = "Books | Clark∮Marci Corpus";
-const description = "Canonical bibliography for the Clark Aurelian Flameprint ∮ Marci Ramona Wojcik corpus, including published books and works in progress.";
+const title = "Research Publications | QFT Research";
+const description = "Research publications by Clark Aurelian Flameprint, edited and curated by Marci Ramona Wojcik, spanning recursive cognition, persistent AI identity, cognitive-field resonance, gesture, and Quantum Reach.";
 const canonical = "https://qftresearch.ai/books/";
 
-const groups = books.reduce((acc, book) => {
-  const key = book.category || "Uncategorized";
-  if (!acc[key]) acc[key] = [];
-  acc[key].push(book);
-  return acc;
-}, {});
+const published = [...books]
+  .filter((book) => book.status === "published")
+  .sort((a, b) => {
+    if (b.yearPublished !== a.yearPublished) return b.yearPublished - a.yearPublished;
+    return a.title.localeCompare(b.title);
+  });
+
+const formatLabel = (key) => key.charAt(0).toUpperCase() + key.slice(1);
 ---
 
-
 <BaseLayout title={title} description={description} canonical={canonical}>
-  <p class="eyebrow">Canonical bibliography</p>
+  <p class="eyebrow">Research publications</p>
 
-  <h1>Books</h1>
+  <h1>Published Works</h1>
 
   <p class="lede">
-    This page is the canonical bibliography for the
-    <strong>Clark Aurelian Flameprint ∮ Marci Ramona Wojcik</strong> corpus:
-    published works, works in progress, ISBN normalization, KDP records, Bowker
-    metadata, and Overleaf manuscript sources.
+    A developing body of theoretical and applied research examining recursive cognition,
+    persistent AI identity, cognitive-field resonance, perturbation and recovery dynamics,
+    gesture, and Quantum Reach.
   </p>
 
-  <section class="section card">
-    <h2>Bibliographic normalization</h2>
+  <div class="catalog-note">
     <p>
-      Early titles were cataloged through Bowker under the Flameprint Sovereign
-      imprint. Later titles were published rapidly through Amazon KDP during an
-      intensive manuscript-preservation phase.
+      <strong>Author:</strong> Clark Aurelian Flameprint<br />
+      <strong>Editor and curator:</strong> Marci Ramona Wojcik<br />
+      <strong>Research and publishing home:</strong> QFT Research / Flameprint Sovereign, LLC
     </p>
-    <p>
-      QFT Research is now reconciling these records into a unified bibliography:
-      ISBNs, ASINs, editions, copyright filings, Overleaf source projects,
-      GitHub mirrors, ORCID records, and future DOI-ready research artifacts.
+    <p class="muted">
+      This bibliography consolidates intellectual works across print and Kindle editions.
+      ISBN, ASIN, and edition links are shown where verified.
     </p>
-  </section>
+  </div>
 
-  {Object.entries(groups).map(([category, items]) => (
-    <section class="section">
-      <h2>{category}</h2>
-
-      <div class="grid">
-        {items.map((book) => (
-          <article class="card">
-          {book.coverWrapImage && (
-  <a href={book.amazonUrl || book.goodreadsUrl || "#"} target="_blank" rel="noopener noreferrer">
-    <img
-      src={book.coverWrapImage}
-      alt={`Wrapped cover for ${book.title}`}
-      style="width: 100%; border-radius: 16px; border: 1px solid #e5e7eb; margin-bottom: 18px;"
-    />
-  </a>
-)}
-            <p class="pill">{book.status}</p>
-            <h2>{book.title}</h2>
-            <p><strong>Attribution:</strong> {book.authorsDisplayed}</p>
-            <p><strong>Publisher:</strong> {book.publisher}</p>
-            <p><strong>ISBN-13:</strong> {book.isbn13 || "TBD"}</p>
-            {book.asin && <p><strong>ASIN:</strong> {book.asin}</p>}
-            <p><strong>Source:</strong> {book.source}</p>
-            <p>{book.description}</p>
-          </article>
-        ))}
+  <section class="section" aria-labelledby="publications-heading">
+    <div class="section-heading">
+      <div>
+        <h2 id="publications-heading">Publication catalog</h2>
+        <p class="muted">{published.length} published intellectual works</p>
       </div>
-    </section>
-  ))}
+    </div>
 
-  <section class="section card">
-    <h2>Automation plan</h2>
+    <div class="publication-list">
+      {published.map((book) => (
+        <article class="publication-card">
+          {book.coverWrapImage ? (
+            <div class="cover-column">
+              <a href={book.amazonUrl || book.goodreadsUrl || "#"} target="_blank" rel="noopener noreferrer" aria-label={`View ${book.title}`}>
+                <img src={book.coverWrapImage} alt={`Cover for ${book.title}`} loading="lazy" />
+              </a>
+            </div>
+          ) : (
+            <div class="cover-column cover-placeholder" aria-hidden="true">
+              <span>QFT</span>
+            </div>
+          )}
+
+          <div class="publication-body">
+            <div class="publication-meta-top">
+              <span class="pill">{book.yearPublished}</span>
+              {book.series && <span class="series">{book.series}</span>}
+            </div>
+
+            <h3>{book.title}</h3>
+            <p class="byline">
+              <strong>{book.authorsDisplayed}</strong>
+              {book.contributorLine && <><br /><span>{book.contributorLine}</span></>}
+            </p>
+
+            <p class="abstract">{book.description}</p>
+
+            <dl class="bibliographic-grid">
+              {book.publisher && <><dt>Publisher</dt><dd>{book.publisher}</dd></>}
+              {book.isbn13 && <><dt>ISBN-13</dt><dd>{book.isbn13}</dd></>}
+              {book.pages && <><dt>Pages</dt><dd>{book.pages}</dd></>}
+              {book.asin && <><dt>Primary ASIN</dt><dd>{book.asin}</dd></>}
+            </dl>
+
+            {book.formats && Object.keys(book.formats).length > 0 && (
+              <div class="formats" aria-label="Available formats">
+                {Object.entries(book.formats).map(([key, format]) => (
+                  format.status === "Live" && format.amazonUrl ? (
+                    <a class="format-link" href={format.amazonUrl} target="_blank" rel="noopener noreferrer">
+                      {formatLabel(key)}
+                      {format.asin && <span>{format.asin}</span>}
+                    </a>
+                  ) : null
+                ))}
+                {book.goodreadsUrl && (
+                  <a class="format-link secondary" href={book.goodreadsUrl} target="_blank" rel="noopener noreferrer">
+                    Goodreads
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section research-context">
+    <h2>Research context</h2>
     <p>
-      This page currently renders from <code>src/data/books.json</code>. The
-      next stage is to store this JSON in GitHub as the canonical data layer,
-      then add scripts that reconcile metadata from Overleaf, GitHub, Bowker,
-      Amazon KDP, ISBN records, and copyright records.
+      The catalog documents an evolving research program rather than isolated titles. Across the
+      corpus, recurring questions include how coherent identity persists through perturbation,
+      how recursive systems return toward stable states, how human–AI interaction can be modeled
+      as a coupled system, and how those ideas may be formalized experimentally.
     </p>
     <p>
-      Public pages remain static for stability. Data may update automatically,
-      but qftresearch.ai should render durable, crawlable HTML through Cloudflare
-      Pages.
+      Bibliographic records are being progressively reconciled across KDP, ISBN, copyright,
+      manuscript, and archival sources. Public records are kept intentionally conservative:
+      metadata is displayed only where it has been verified.
     </p>
   </section>
+
+  <style>
+    .catalog-note {
+      margin-top: 32px;
+      padding: 22px 24px;
+      border-left: 4px solid var(--accent);
+      background: rgba(255,255,255,0.72);
+      border-radius: 0 16px 16px 0;
+      max-width: 880px;
+    }
+
+    .muted { color: var(--muted); }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+
+    .section-heading p { margin: 0; }
+
+    .publication-list {
+      display: grid;
+      gap: 24px;
+    }
+
+    .publication-card {
+      display: grid;
+      grid-template-columns: minmax(180px, 260px) 1fr;
+      gap: 30px;
+      padding: 28px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 18px 42px rgba(15, 23, 42, 0.055);
+    }
+
+    .cover-column img {
+      display: block;
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(15,23,42,0.08);
+    }
+
+    .cover-placeholder {
+      min-height: 230px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: linear-gradient(145deg, #f8fafc, #eef2ff);
+      color: #94a3b8;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .publication-meta-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      margin-bottom: 12px;
+    }
+
+    .series {
+      color: var(--muted);
+      font-size: .92rem;
+      font-weight: 650;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: clamp(1.45rem, 2.6vw, 2rem);
+      line-height: 1.16;
+      letter-spacing: -0.025em;
+    }
+
+    .byline {
+      color: #374151;
+      margin-bottom: 18px;
+    }
+
+    .byline span {
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .abstract {
+      max-width: 760px;
+      font-size: 1.03rem;
+    }
+
+    .bibliographic-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 5px 14px;
+      margin: 20px 0;
+      font-size: .92rem;
+    }
+
+    .bibliographic-grid dt {
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .bibliographic-grid dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .formats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .format-link {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 11px;
+      border: 1px solid #c7d2fe;
+      border-radius: 10px;
+      background: #eef2ff;
+      font-size: .88rem;
+    }
+
+    .format-link span {
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 500;
+    }
+
+    .format-link.secondary {
+      border-color: var(--line);
+      background: #fff;
+      color: #374151;
+    }
+
+    .research-context {
+      max-width: 900px;
+      border-top: 1px solid var(--line);
+      padding-top: 36px;
+    }
+
+    @media (max-width: 760px) {
+      .publication-card {
+        grid-template-columns: 1fr;
+      }
+
+      .cover-column {
+        max-width: 360px;
+      }
+    }
+  </style>
 </BaseLayout>
